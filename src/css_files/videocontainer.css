@@ -1,0 +1,71 @@
+.vc-Parent-div {
+  width: 85%;
+  height: 100%;
+  /* border: 1px solid red; */
+  overflow: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+.loader {
+  position: relative;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+@media (max-width: 1300px) {
+  /* .container {
+    max-width: 1100px;
+  } */
+  .vc-Parent-div {
+    gap: 14px;
+  }
+}
+@media (max-width: 1100px) {
+  /* .container {
+    max-width: 1000px;
+  } */
+}
+@media (max-width: 1000px) {
+  /* .container {
+    max-width: 900px;
+  } */
+}
+@media (max-width: 900px) {
+  /* .container {
+    max-width: 750px;
+  } */
+  .vc-Parent-div {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 750px) {
+  /* .container {
+    max-width: 650px;
+  } */
+}
+@media (max-width: 650px) {
+  /* .container {
+    max-width: 500px;
+  } */
+  .vc-Parent-div {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  /* .container {
+    max-width: 100%;
+  } */
+}
+@media (max-width: 400px) {
+  /* .container {
+    max-width: 100%;
+  } */
+}
+@media (max-width: 320px) {
+  /* .container {
+    max-width: 100%;
+  } */
+}

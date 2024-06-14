@@ -1,0 +1,247 @@
+.vCart-parent-div {
+  /* border: 1px solid white; */
+  height: 17rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: #424242;
+  /* position: absolute; */
+  border-radius: 10px;
+  color: white;
+}
+.vCart-thum-img {
+  border-radius: 10px;
+  /* width: 100%; */
+}
+.pop-channel-image {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.vCart-first-div {
+  display: flex;
+  gap: 10px;
+  /* position: absolute; */
+}
+.vCart-vidinfo {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+}
+.vCart-second-div {
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  /* overflow: hidden; */
+}
+.vCart-video-title {
+  margin-top: 5px;
+}
+.vCart-color-span {
+  color: var(--primary-color);
+}
+.link-to-watch {
+  color: white;
+  text-decoration: none;
+}
+.vid-tit {
+  line-height: 1;
+}
+.btn-watch-later {
+  background-color: var(--primary-color);
+  color: black;
+  border: none;
+  padding: 2px;
+  border-radius: 4px;
+}
+@media (max-width: 1300px) {
+  /* .container {
+    max-width: 1100px;
+  } */
+  .vCart-parent-div {
+    height: 14rem;
+  }
+  .pub-heading,
+  .pub-date {
+    font-size: 14px;
+  }
+  .vCart-thum-img {
+    width: 16rem;
+  }
+  .vCart-second-div {
+    padding: 8px;
+  }
+  .vid-tit {
+    font-size: 14px;
+  }
+  .vCart-video-title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1100px) {
+  /* .container {
+    max-width: 1000px;
+  } */
+  .vCart-thum-img {
+    width: 14rem;
+  }
+  .vCart-second-div {
+    padding: 6px;
+  }
+  .vCart-video-title {
+    margin-top: 1px;
+  }
+}
+@media (max-width: 1000px) {
+  /* .container {
+    max-width: 900px;
+  } */
+
+  .vCart-parent-div {
+    position: relative;
+  }
+  .btn-watch-later {
+    position: absolute;
+    top: 30%;
+    right: 6%;
+  }
+  .vCart-first-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .vCart-vidinfo {
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+@media (max-width: 900px) {
+  /* .container {
+    max-width: 750px;
+  } */
+  .vCart-parent-div {
+    height: 17rem;
+  }
+  .vCart-first-div {
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: end; */
+  }
+  .vCart-vidinfo {
+    flex-direction: column;
+    /* justify-content: start; */
+  }
+  .vCart-thum-img {
+    border-radius: 10px;
+    /* width: 80%; */
+  }
+  .btn-watch-later {
+    /* position: absolute; */
+    top: 3%;
+    right: 3%;
+  }
+  .pub-heading,
+  .pub-date {
+    font-size: 1rem;
+  }
+  .vCart-thum-img {
+    width: 18rem;
+  }
+  .vCart-second-div {
+    padding: 10px;
+  }
+  .vid-tit {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .vCart-video-title {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 750px) {
+  /* .container {
+    max-width: 650px;
+  } */
+  .vCart-thum-img {
+    width: 16rem;
+  }
+  .vCart-parent-div {
+    height: 16rem;
+  }
+  .vid-tit {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 650px) {
+  /* .container {
+    max-width: 500px;
+  } */
+  .vCart-parent-div {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  /* .container {
+    max-width: 100%;
+  } */
+  .pub-heading,
+  .pub-date {
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  /* .container {
+    max-width: 100%;
+  } */
+
+  .pub-heading,
+  .pub-date {
+    display: none;
+  }
+  .vCart-parent-div {
+    position: relative;
+  }
+  .btn-watch-later {
+    position: absolute;
+    height: 1.2rem;
+    top: 90%;
+    right: 2%;
+  }
+  .vid-tit {
+    font-size: 14px;
+  }
+  .vCart-video-title {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  /* .container {
+    max-width: 100%;
+  } */
+  .vCart-parent-div {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  /* .container {
+    max-width: 100%;
+  } */
+  .vCart-parent-div {
+    width: 100%;
+  }
+  .vCart-thum-img {
+    width: 13rem;
+  }
+}

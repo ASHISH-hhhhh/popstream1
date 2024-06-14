@@ -1,0 +1,48 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  /* height: 25rem;
+  width: 25rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.md-portal {
+  background-color: rgba(255, 0, 128, 0.466);
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+.text-td {
+  text-align: center;
+  font-weight: bold;
+}
+@keyframes wavy {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.wavy-background {
+  background: linear-gradient(
+    to right,
+    red,
+    yellow,
+    blue
+  ); /* Change colors as desired */
+  background-size: 200% 100%;
+  animation: wavy 2s infinite alternate;
+}
+.cancelIcon {
+  cursor: pointer;
+}
