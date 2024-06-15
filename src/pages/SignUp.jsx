@@ -315,12 +315,9 @@ function SignUp() {
         </div>
       )}
       <div className="test-log">
-        Are you here just to test or use my web app and don’t want to sign up
-        with your real credentials? Don’t worry, I’ve got you covered! Use these
-        sign-in credentials format instead:
-        <p className="tacc c1">Name :- any Random Name</p>
-        <p className="tacc">Email :- any|random|user1234@gmail.com</p>
-        <p className="tacc">Password :- anyRandomPassword</p>
+        Testing <b>LOGIN*</b> Id for Developers/Recruiters
+        <p className="tacc">Email :- ashish@gmail.com</p>
+        <p className="tacc">Password :- 123456789</p>
       </div>
     </div>
   );

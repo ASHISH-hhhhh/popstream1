@@ -17,6 +17,7 @@ import { db } from "../firebase";
 import { toast } from "react-toastify";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase";
+import { setshowSide } from "../utils/toggleSice";
 
 function Sidebar() {
   const { savedVideos } = useSelector((store) => store.saved);
@@ -108,6 +109,7 @@ function Sidebar() {
   const sidebarStyles = {
     display: windowWidth <= 650 && show ? "none" : "",
   };
+
   return (
     <div className="sidebar-div" style={sidebarStyles}>
       <div className="sidebar-home-icon-div">
@@ -128,7 +130,10 @@ function Sidebar() {
             }}
             className="sidebar-category-list"
             key={uuidv4()}
-            onClick={() => vidByCategories(categaory)}
+            onClick={() => {
+              vidByCategories(categaory);
+              dispatch(setshowSide());
+            }}
           >
             {categaory}{" "}
           </div>
