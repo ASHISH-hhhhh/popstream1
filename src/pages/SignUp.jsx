@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 import { getDoc, setDoc } from "firebase/firestore";
 import { signInWithPopup } from "firebase/auth";
 import logo from "../assets/logo.png";
+import ModalTwo from "../components/ModalTwo";
 
 function SignUp() {
   const navigate = useNavigate();
@@ -21,6 +22,7 @@ function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setconfirmPassword] = useState("");
+  const [showNote, setshowNote] = useState(true);
   const signUpEmailfunc = () => {
     setLoading(true);
     console.log(name, email, password, "Account created");
@@ -146,6 +148,9 @@ function SignUp() {
         alt="popstream1-logo"
         className="log-logo colored-image"
       /> */}
+      {/* const [showNote, setshowNote] = useState(true); */}
+
+      {showNote && <ModalTwo onClose={() => setshowNote(false)} />}
 
       {loginForm ? (
         // <div className="sign-up-from">
