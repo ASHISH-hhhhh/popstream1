@@ -16,7 +16,7 @@ import ModalTwo from "../components/ModalTwo";
 
 function SignUp() {
   const navigate = useNavigate();
-  const [loginForm, setloginForm] = useState(false);
+  const [loginForm, setloginForm] = useState(true);
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
